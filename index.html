@@ -1,24 +1,24 @@
 <!DOCTYPE html>
-<html>
-<HEAD>
-<STYLE type="text/css">
+ <html>
+  <HEAD>
+   <STYLE type="text/css">
 tr#mytr {font-style: italic; color: white}
 th#myth {font-style: bold; color:red ; backgroud-color: lightblue}
-</STYLE>
-</HEAD>
-<body>
-<h2>Convercion de Temperatura</h2>
+   </STYLE>
+  </HEAD>
+ <body>
+  <h2>Convercion de Temperatura</h2>
 
 <p id="demo"></p>
 
-<script>
+	 <script>
 
 function kelvin(c) { return c+270 ;}
 function fahrenheit(c){ return 9/5*c +32;}
 function rankine(c){ return 9/5*c +492;}
 function reaumur(c){ return 4/5*c;}
 
-var temp = ["Celcious", "Kelvin", "Fahrenheit", "Rankine", "Réaumur", "Estado de Agua"];
+var temp = ["Celcious", "Kelvin", "Fahrenheit", "Rankine", "Reaumur", "Estado de Agua"];
 var text = "<table border= 1 >";
 var i, c;
 for (i = 0; i < temp.length; i++) {
@@ -33,5 +33,5 @@ for(c=-270;c<=200;c +=10)
 document.getElementById("demo").innerHTML = text +"</table>";
 </script>
 
-</body>
-</html>
+  </body>
+ </html>
